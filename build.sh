@@ -1,9 +1,13 @@
 #!/usr/bin/env bash
 
-docker buildx build --platform linux/amd64 -t ssh-client .
+TAG_NAME="ssh-client"
+ACCOUNT="jetstylehub"
+VERSION=3.18
 
-docker tag ssh-client gnextapp/ssh-client:3.18
-docker tag ssh-client gnextapp/ssh-client:latest
+docker buildx build --platform linux/amd64 -t $TAG_NAME .
 
-docker push gnextapp/ssh-client:3.18
-docker push gnextapp/ssh-client:latest
+docker tag $TAG_NAME $ACCOUNT/$TAG_NAME:$VERSION
+docker tag $TAG_NAME $ACCOUNT/$TAG_NAME:latest
+
+docker push $TAG_NAME $ACCOUNT/$TAG_NAME:$VERSION
+docker push $TAG_NAME $ACCOUNT/$TAG_NAME:latest
