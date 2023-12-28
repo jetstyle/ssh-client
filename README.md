@@ -1,4 +1,6 @@
-Welcome to our Docker Hub repository! This is your go-to source for a streamlined SSH client, specially designed for deploying applications through GitLab. Our client is essential for automating the deployment of your built applications to servers with ease and efficiency.
+Welcome to our [Docker Hub](https://hub.docker.com/r/jetstylehub/ssh-client) repository!
+
+This is your go-to source for a streamlined SSH client, specially designed for deploying applications through GitLab. Our client is essential for automating the deployment of your built applications to servers with ease and efficiency.
 
 What makes our repository unique?
 
